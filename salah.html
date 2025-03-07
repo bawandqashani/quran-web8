@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ckb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ڕێکخراوی ڕووناکی</title>
+    <style>
+      /* General body styling */
+      body {
+        background: linear-gradient(135deg, #e0f7fa, #80deea); /* Gradient background */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; /* Center text */
+      }
+
+      /* Styling for the header */
+      header h1 {
+        font-size: 3rem;
+        color: #00796b;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on the text */
+      }
+
+      /* Styling for the video container */
+      .video-container {
+        width: 90%;
+        max-width: 960px; /* Maximum width for larger screens */
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+      }
+
+      /* Responsive iframe styling */
+      iframe {
+        width: 100%;
+        height: 500px; /* Fixed height */
+        border: none;
+        border-radius: 15px; /* Rounded corners for iframe */
+      }
+
+      /* Optional: Add a custom button style for user interaction */
+      .play-button {
+        background-color: #00796b;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for the button */
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect for the button */
+      .play-button:hover {
+        background-color: #004d40;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Lets Learn Salah with Us</h1>
+  </header>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/XG35X4fMmoc" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Optional Play button -->
+  <button class="play-button" onclick="window.location.href='https://www.youtube.com/watch?v=XG35X4fMmoc'">Watch on YouTube</button>
+</body>
+</html>

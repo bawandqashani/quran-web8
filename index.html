@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ckb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ڕێکخراوی ڕووناکی</title>
+
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4A90E2;
+            color: #333;
+            line-height: 1.6;
+        }
+      
+  .date-time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #ffffff; /* White text to contrast against blue background */
+  background-color: #4A90E2; /* A nice blue that stands out against the page background */
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 3, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+.date-time:hover {
+  background-color: #3498db; /* Lighter blue when hovered */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.date-time:active {
+  transform: 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+      
+  .date-time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #ffffff; /* White text to contrast against blue background */
+  background-color: #2980b9; /* A nice blue that stands out against the page background */
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+.date-time:hover {
+  background-color: #3498db; /* Lighter blue when hovered */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.date-time:active {
+  transform: scale(0.98);
+}
+scale(0.98);
+}
+
+
+
+
+        header {
+            background-color: #2c3e50 ;
+            color: #FFF;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .live-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+     ..live-indicator {
+  display: flex;
+  align-items: left;
+  position: relative;
+  text-decoration: none;
+  color: #000; /* Text color */
+}
+
+.live-indicator .circle {
+  width: 8px; /* Smaller circle size */
+  height: 8px; /* Smaller circle size */
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 6px; /* Adjust margin for smaller circle */
+  position: absolute; /* Make it draggable */
+  cursor: pointer;
+}
+
+.live-indicator:hover {
+  color: white ; /* Change link color when hovered */
+      }
+ 
+ 
+  
+
+
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .date-time {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #16a085;
+            transform: translateY(-5px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #2980b9);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 5px solid #16a085;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+      }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            color: #ddd;
+        }
+
+        .cta-button {
+            background-color: #16a085;
+            color: white;
+            padding: 15px 50px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1abc9c;
+            transform: translateY(-5px);
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #fff;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+            color: #2c3e50;
+            letter-spacing: 1px;
+      }
+
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        iframe {
+            width: 85%;
+            height: 450px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .important-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .surah-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .surah-list li {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #555;
+            transition: transform 0.3s ease;
+        }
+
+        .surah-list li:hover {
+            transform: translateX(10px);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 12px 40px;
+            }
+        }
+      
+      .content-section {
+  display: none;
+}
+
+#salah, #learn-salawat, #quran, #ramazan {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #BDC3C7;
+}
+      nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px; /* Adds spacing between items */
+}
+
+nav a {
+    padding: 10px 15px;
+    display: inline-block;
+}
+      nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShd0LtdKbEV_5UBsVVObmfN2zr6cSx8SCcQ&s" class="logo" alt="Runaki Logo">
+        <h1>ڕێکخراوی ڕووناکی</h1>
+      <br>
+      <p id="current-date-time" class="date-time"></p>
+   
+
+ <!-- Day and time will be inserted here -->
+        <br>
+      <h5 style="font-family: Tahoma; font-size: 1.2rem; color: #B8860B;">
+    Developed By BAWAND MARIWAN
+</h5>
+
+     <!-- Live Indicator with link to Makkah Live -->
+<a href="https://www.youtube.com/embed/Fsy_KUOhgV8" class="live-indicator" target="_blank">
+    <div class="circle"></div>
+    Makkah
+</a>
+
+     
+    </header>
+
+      <nav>
+        <a href="salah.html">فێربوونی نوێژ</a>
+        <a href="#learn-salawat">فێربوونی سەڵاوات</a>
+        <a href="quran.html">فێربوونی قوڕئان</a>
+        <a href="ramazan.html">مانگی ڕەمەزان</a>
+        
+        
+    </nav>
+
+
+<!-- Learn Quran Section -->
+<section id="learn-quran">
+    <h2 class="section-title">ویردەکانی ئێواران</h2>
+    <ul class="surah-list">
+        <div class="video-container">
+            <h3>Evening Adhkar Video</h3>
+            <iframe src="https://www.youtube.com/embed/RRa477FQfhs"></iframe>
+        </div>
+    </ul>
+    
+  
+  
+</section>
+
+    <!-- JavaScript to show the current date and time -->
+    <script>
+        function updateDateTime() {
+        const now = new Date();
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const day = days[now.getDay()];
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        const time = `${day}, ${hours}:${minutes}:${seconds}`;
+        document.getElementById("current-date-time").innerText = time;
+    }
+
+    // Call updateDateTime when the page loads
+    window.onload = function() {
+        updateDateTime();
+        // Update every second
+        setInterval(updateDateTime, 1000);
+    };
+      
+      function scrollNav(val) {
+        document.getElementById('nav-bar').scrollLeft += val;
+    }
+      
+     
+    
+  // Function to request notification permission
+        function requestNotificationPermission() {
+            Notification.requestPermission().then(function(permission) {
+                if (permission === 'granted') {
+                    console.log('Notification permission granted.');
+                } else {
+                    console.log('Unable to get permission to notify.');
+                }
+            });
+        }
+
+        // Function to send a notification at 20:14
+        function sendTestNotification() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+
+            // Check if it's 20:14 (8:14 PM)
+            if (hours === 20 && minutes === 27) {
+                if (Notification.permission === 'granted') {
+                    new Notification('Test Notification', {
+                        body: 'This is a test notification sent at 20:14! 🎉',
+                        icon: 'icon.png', // Add an icon for the notification
+                    });
+                } else {
+                    console.log('Notification permission not granted.');
+                }
+            }
+        }
+
+        // Call functions when the page loads
+        window.onload = function() {
+            updateDateTime();
+            setInterval(updateDateTime, 1000); // Update time every second
+            requestNotificationPermission(); // Request notification permission
+            setInterval(sendTestNotification, 60000); // Check time every minute
+        };
+
+        // Function for scrolling the navigation bar (if needed)
+        function scrollNav(val) {
+            document.getElementById('nav-bar').scrollLeft += val;
+        }
+    </script>
+
+</body>
+</html>
